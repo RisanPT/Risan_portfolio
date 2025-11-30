@@ -1,4 +1,4 @@
-import { FaDiscord, FaGithub, FaMapPin } from "react-icons/fa";
+import { FaDiscord, FaGithub, FaLinkedinIn, FaMapPin } from "react-icons/fa";
 import { HiCode, HiCube, HiDatabase, HiMail, HiBriefcase } from "react-icons/hi";
 
 export const config = {
@@ -141,7 +141,7 @@ export const config = {
         {
             icon: <FaGithub className="w-5 h-5" />,
             label: "GitHub",
-            value: "@risanpallithazha",
+            value: "@RisanPT",
             link: `https://github.com/RisanPT`
         },
         {
@@ -151,9 +151,15 @@ export const config = {
             link: "mailto:risanpallithazha@gmail.com"
         },
         {
+            icon: <FaLinkedinIn className="w-5 h-5" />,
+            label: "LinkedIn",
+            value: "Risan PT",
+            link: "https://www.linkedin.com/in/muhammed-risan-pt/"
+        },
+        {
             icon: <FaMapPin className="w-5 h-5" />,
             label: "Location",
-            value: "Vadakara, Kerala",
+            value: "Kozhikkode,Kerala",
             link: null
         }
     ]
