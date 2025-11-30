@@ -79,7 +79,8 @@ const HeroSection = () => {
                 variants={textAnimation}
                 className="block text-white/60 text-2xl md:text-4xl"
               >
-I build web that builds brands.              </motion.span>
+                Crafting elegant Flutter experiences.
+              </motion.span>
             </motion.h1>
           </div>
 
@@ -87,7 +88,7 @@ I build web that builds brands.              </motion.span>
             variants={itemAnimation}
             className="text-base sm:text-md text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
-           Full-stack builder creating digital experiences that respect humans and scale with clarity. Accessibility is my north star.
+            Flutter developer with 2 years of hands-on experience building cross-platform mobile applications. I specialize in creating clean, efficient, and user-centric apps with a focus on performance and code quality.
           </motion.p>
 
           <motion.div
@@ -105,8 +106,6 @@ I build web that builds brands.              </motion.span>
               </Button>
             </Link>
           </motion.div>
-
-     
 
           <motion.div
             initial={{ opacity: 0 }}
