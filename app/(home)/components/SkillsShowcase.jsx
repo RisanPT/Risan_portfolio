@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { HiCode } from 'react-icons/hi';
 import { SiFlutter, SiDart, SiFirebase, SiGit, SiGithub, SiPostman, SiDocker, SiFigma } from 'react-icons/si';
-import { FaGooglePlay, FaApple } from 'react-icons/fa';
+import { FaGooglePlay, FaApple, FaSwift, FaAndroid, FaWeebly, FaHtml5, FaCss3, FaJs } from 'react-icons/fa';
 
 const skills = [
     { name: "Flutter", icon: <SiFlutter className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
@@ -22,6 +22,14 @@ const skills = [
     { name: "ObjectBox", icon: <HiCode className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
     { name: "Play Store", icon: <FaGooglePlay className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
     { name: "App Store", icon: <FaApple className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "Agile", icon: <HiCode className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "Supabase", icon: <HiCode className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "Swift", icon: <FaSwift className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "Android", icon: <FaAndroid className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "HTML", icon: <FaHtml5 className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
+    { name: "CSS", icon: <FaCss3 className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "JavaScript", icon: <FaJs className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "API Integration", icon: <HiCode className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
 ];
 
 const containerAnimation = {
