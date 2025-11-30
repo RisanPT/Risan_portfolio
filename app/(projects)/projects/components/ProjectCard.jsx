@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGooglePlay, FaApple } from 'react-icons/fa';
 import { itemAnimation } from './Animations';
 
 export const ProjectCard = ({ project, index }) => (
@@ -49,22 +49,62 @@ export const ProjectCard = ({ project, index }) => (
                 </div>
             </div>
 
-            <div className="flex items-center gap-3 pt-4">
-                <Button
-                    size="sm"
-                    className="rounded-full h-8 px-4 text-xs"
-                    asChild
-                >
-                    <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2"
+            <div className="flex items-center gap-3 pt-4 flex-wrap">
+                {project.demo && project.demo !== "#" && (
+                    <Button
+                        size="sm"
+                        className="rounded-full h-8 px-4 text-xs"
+                        asChild
                     >
-                        Live Demo
-                        <FaExternalLinkAlt className="w-3 h-3" />
-                    </a>
-                </Button>
+                        <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2"
+                        >
+                            Live Demo
+                            <FaExternalLinkAlt className="w-3 h-3" />
+                        </a>
+                    </Button>
+                )}
+
+                {project.playstore && project.playstore !== "#" && (
+                    <Button
+                        size="sm"
+                        variant="outline"
+                        className="rounded-full h-8 px-4 text-xs"
+                        asChild
+                    >
+                        <a
+                            href={project.playstore}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2"
+                        >
+                            <FaGooglePlay className="w-3 h-3" />
+                            Play Store
+                        </a>
+                    </Button>
+                )}
+
+                {project.appstore && project.appstore !== "#" && (
+                    <Button
+                        size="sm"
+                        variant="outline"
+                        className="rounded-full h-8 px-4 text-xs"
+                        asChild
+                    >
+                        <a
+                            href={project.appstore}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2"
+                        >
+                            <FaApple className="w-3 h-3" />
+                            App Store
+                        </a>
+                    </Button>
+                )}
             </div>
         </div>
     </motion.div>

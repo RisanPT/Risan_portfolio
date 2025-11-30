@@ -3,154 +3,157 @@ import { HiCode, HiCube, HiDatabase, HiMail, HiBriefcase } from "react-icons/hi"
 
 export const config = {
     developer: {
-        name: "Huzaif",
+        name: "Muhammed Risan PT",
     },
     social: {
-        github: "huzaifahmedz",
+        github: "https://github.com/RisanPT", // Update with your GitHub username
         discord: "#"
     },
     NAV_ITEMS: [
         { href: '/projects', label: 'Projects' },
         { href: '/contact', label: 'Contact' }
     ],
-    recentTracks: true, // Enable/disable Spotify recent tracks
+    recentTracks: true,
     projects: [
         {
             id: 1,
-            title: "AI-Powered Code Review Assistant",
-            description: "An intelligent code review platform that uses machine learning to analyze pull requests, detect bugs, suggest optimizations, and enforce coding standards. Features real-time collaboration, automated testing integration, and comprehensive security scanning.",
-            image: "/projects/project-1.webp",
-            technologies: ["Python", "TensorFlow", "React", "FastAPI", "PostgreSQL", "Docker"],
+            title: "Dahab Mining",
+            description: "Cross-platform cryptocurrency mining app for a UAE-based company, enabling users to invest in and manage real Bitcoin mining operations. Implemented clean architecture for scalability, Riverpod for efficient state management, and Dio for secure API integration. Integrated Ziina and DeusX payment gateways for seamless deposits and withdrawals.",
+            image: "/projects/dahab-mining.webp",
+            technologies: ["Flutter", "Riverpod", "Dio", "GoRouter", "GetStorage", "Ziina Payment API", "DeusX"],
             github: "#",
             demo: "#"
         },
         {
             id: 2,
-            title: "Real-time Collaborative Whiteboard",
-            description: "A next-generation collaborative whiteboard platform with infinite canvas, real-time synchronization, and advanced drawing tools. Supports video conferencing, screen sharing, and export to multiple formats. Built for remote teams and educators.",
-            image: "/projects/project-2.webp",
-            technologies: ["TypeScript", "WebRTC", "Socket.io", "Canvas API", "Node.js", "Redis"],
+            title: "Syssense",
+            description: "Responsive web-based user management system designed to handle timesheets, petty cash, and leave requests with four-level approval workflows. Implemented secure authentication, API integration using Dio, and state management with Riverpod. Utilized GoRouter for structured navigation and Flutter Secure Storage for session protection.",
+            image: "/projects/syssense.webp",
+            technologies: ["Flutter Web", "Riverpod", "Dio", "GoRouter", "Flutter Secure Storage", "Node.js"],
             github: "#",
             demo: "#"
         },
         {
             id: 3,
-            title: "Blockchain Voting System",
-            description: "A secure, transparent, and decentralized voting platform built on Ethereum. Features smart contract-based voting, anonymous ballots, real-time result tracking, and immutable audit trails. Ensures election integrity through cryptographic verification.",
-            image: "/projects/project-3.webp",
-            technologies: ["Solidity", "Web3.js", "React", "Ethereum", "IPFS", "MetaMask"],
+            title: "Tron Academy",
+            description: "Developed a cross-platform e-learning application similar to Udemy, offering courses in digital marketing, multimedia, and coding. Implemented real-time community features where users can join groups, chat, share files, voice notes, and images. Integrated Agora for live interactive classes and built audio/video streaming modules.",
+            image: "/projects/tron-academy.webp",
+            technologies: ["Flutter", "Riverpod", "Dio", "Flutter Secure Storage", "Socket.io", "Agora", "Node.js"],
             github: "#",
             demo: "#"
         },
         {
             id: 4,
-            title: "Cloud Infrastructure Dashboard",
-            description: "A comprehensive cloud management platform for monitoring, managing, and optimizing multi-cloud infrastructure. Features real-time metrics, cost analysis, automated scaling, and security compliance monitoring across AWS, Azure, and GCP.",
-            image: "/projects/project-4.webp",
-            technologies: ["Go", "Kubernetes", "Grafana", "Prometheus", "Terraform", "React"],
+            title: "HandCar",
+            description: "Developed a cross-platform car service and accessories app for a UAE-based company, offering spare parts, accessories purchases, and nearby service center discovery. Implemented state management with Riverpod, secure data handling using GetStorage, and API integration through Dio. Integrated GeoLocator for real-time detection of nearby service centers.",
+            image: "/projects/handcar.webp",
+            technologies: ["Flutter", "Riverpod", "Dio", "GetStorage", "GeoLocator", "Python Django"],
             github: "#",
             demo: "#"
         },
         {
             id: 5,
-            title: "Neural Network Visualizer",
-            description: "An interactive web application for visualizing, training, and experimenting with neural networks. Features drag-and-drop architecture builder, real-time training visualization, model comparison tools, and export capabilities for production deployment.",
-            image: "/projects/project-5.webp",
-            technologies: ["Python", "TensorFlow.js", "D3.js", "Next.js", "WebGL", "TypeScript"],
+            title: "Laundry Bin",
+            description: "Contributed to the development of an on-demand laundry app built with Flutter, GetX, and Firebase. Worked on feature implementation, performance optimization, and API integration with backend services. Gained practical experience in MVC architecture, responsive UI design, and maintainable Flutter code practices.",
+            image: "/projects/laundry-bin.webp",
+            technologies: ["Flutter", "GetX", "Firebase", "MVC Architecture", "Responsive Design"],
             github: "#",
             demo: "#"
         }
- 
+
     ],
     skills: [
         {
-            title: "Frontend",
+            title: "Mobile Development",
             icon: <HiCode />,
-            description: "Modern web interfaces",
+            description: "Cross-platform mobile apps",
             bgClass: "bg-blue-500/10",
             iconClass: "text-blue-500",
             skills: [
-                { name: "Next.js 15", level: "Advanced", hot: true },
-                { name: "React", level: "Advanced" },
-                { name: "TailwindCSS", level: "Expert" },
-                { name: "JavaScript", level: "Advanced" },
-                { name: "Framer Motion", level: "Intermediate" }
+                { name: "Flutter", level: "Advanced", hot: true },
+                { name: "Dart", level: "Advanced", hot: true },
+                { name: "GetX", level: "Advanced" },
+                { name: "Responsive Design", level: "Expert" },
+                { name: "MVC Architecture", level: "Advanced" }
             ]
         },
         {
-            title: "Backend",
+            title: "State Management & APIs",
             icon: <HiDatabase />,
-            description: "Server & Database",
+            description: "State Management & Backend Integration",
             bgClass: "bg-emerald-500/10",
             iconClass: "text-emerald-500",
             skills: [
-                { name: "Node.js", level: "Advanced", hot: true },
-                { name: "MongoDB", level: "Advanced" },
-                { name: "Express.js", level: "Advanced", hot: true }
+                { name: "Riverpod", level: "Advanced", hot: true },
+                { name: "Bloc", level: "Advanced" },
+                { name: "Provider", level: "Intermediate" },
+                { name: "Dio", level: "Advanced", hot: true },
+                { name: "Firebase", level: "Advanced" }
             ]
         },
         {
-            title: "Programs & Tools",
+            title: "Tools & Database",
             icon: <HiCube />,
-            description: "Development & Productivity Tools",
+            description: "Development Tools & Storage",
             bgClass: "bg-orange-500/10",
             iconClass: "text-orange-500",
             skills: [
-                { name: "VS Code", level: "Expert", hot: true },
+                { name: "Git", level: "Advanced", hot: true },
                 { name: "Postman", level: "Advanced" },
-                { name: "Photoshop", level: "Intermediate" },
-                { name: "Git", level: "Advanced" }
+                { name: "Figma", level: "Intermediate" },
+                { name: "ObjectBox", level: "Advanced" },
+                { name: "Docker", level: "Intermediate" },
+                { name: "Agile", level: "Advanced" }
             ]
         }
     ],
     experiences: [
         {
-            position: "Frontend Developer",
-            company: "SelectSkillSet",
-            period: "2024 - Present",
-            location: "Remote",
-            description: "Developing modern, responsive frontend applications with focus on user experience and performance. Working with cutting-edge technologies to build scalable web solutions.",
+            position: "Flutter Developer",
+            company: "TRON Digital",
+            period: "Sep 2024 - Present",
+            location: "Remote, UAE",
+            description: "Serving as the lead Flutter developer, handling the design and development of mobile and web applications. Building and deploying major products using clean architecture and modern state management patterns.",
             responsibilities: [
-                "Building responsive and interactive user interfaces using React and Next.js",
-                "Implementing modern UI/UX designs with TailwindCSS and Framer Motion",
-                "Optimizing application performance and ensuring cross-browser compatibility",
-                "Collaborating with design and backend teams to deliver high-quality features"
+                "Designing and developing mobile and web applications with Flutter",
+                "Built and deployed four major products — Dahab Mining, Syssense, Handcar, and TRON Academy",
+                "Utilized Riverpod, Dio, and GoRouter for efficient state management, API integration, and navigation",
+                "Focused on responsive design, real-time functionality, and performance optimization"
             ],
-            technologies: ["React", "Next.js", "TailwindCSS", "JavaScript", "Framer Motion", "TypeScript"]
+            technologies: ["Flutter", "Riverpod", "Dio", "GoRouter", "Clean Architecture", "MVC"]
         },
         {
-            position: "Full Stack Developer",
-            company: "Tekisky",
-            period: "2023 - 2024",
-            location: "Remote",
-            description: "Developed and maintained full-stack web applications, working on both frontend and backend systems. Collaborated with cross-functional teams to deliver robust software solutions.",
+            position: "Jr Flutter Developer",
+            company: "LevelX",
+            period: "May 2023 - Aug 2024",
+            location: "Kozhikode, Kerala",
+            description: "Contributed to the development of cross-platform mobile applications with focus on clean code and user experience. Worked on feature implementation, API integration, and performance optimization.",
             responsibilities: [
-                "Developed and maintained full-stack web applications using React, Node.js, and MongoDB",
-                "Implemented RESTful APIs and integrated third-party services",
-                "Built responsive user interfaces and optimized application performance",
-                "Worked on database design and backend architecture"
+                "Contributed to development of Laundry Bin on-demand laundry app using Flutter, GetX, and Firebase",
+                "Worked on feature implementation, performance optimization, and API integration with backend services",
+                "Assisted in building in-house tools including user management systems for internal operations",
+                "Gained practical experience in MVC architecture, responsive UI design, and maintainable Flutter code"
             ],
-            technologies: ["React", "Node.js", "MongoDB", "Express", "JavaScript", "MERN Stack"]
+            technologies: ["Flutter", "GetX", "Firebase", "API Integration", "Responsive Design"]
         }
     ],
     contactInfo: [
-     
         {
             icon: <FaGithub className="w-5 h-5" />,
             label: "GitHub",
-            value: "@huzaifahmedz",
-            link: `https://github.com/huzaifahmedz`
+            value: "@risanpallithazha",
+            link: `https://github.com/RisanPT`
         },
         {
             icon: <HiMail className="w-5 h-5" />,
             label: "Email",
-            value: "dev.huzaif@gmail.com",
-            link: "mailto:dev.huzaif@gmail.com"
+            value: "risanpallithazha@gmail.com",
+            link: "mailto:risanpallithazha@gmail.com"
         },
         {
             icon: <FaMapPin className="w-5 h-5" />,
             label: "Location",
-            value: "India",
+            value: "Vadakara, Kerala",
             link: null
         }
     ]

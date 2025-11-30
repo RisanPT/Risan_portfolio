@@ -15,13 +15,13 @@ const geistSans = localFont({
 });
 
 export const metadata = {
-  title: "Huzaif\'s Portfolio",
-  icons:{
-icon: "/logo.png"
+  title: "Muhammed Risan - Flutter Developer Portfolio",
+  icons: {
+    icon: "/logo.png"
   },
-  description: "Experienced fullstack developer specializing in modern web technologies. View my projects, skills, and experience.",
-  keywords: "fullstack developer,backend developer, frontend developer, web development, JavaScript,JS, C#, CSharp, React, Node.js, portfolio",
-  author: "Huzaif Ahmed",
+  description: "Flutter Developer with 2 years of hands-on experience specializing in cross-platform mobile applications. View my Flutter projects, skills, and experience.",
+  keywords: "flutter developer, mobile developer, dart developer, cross-platform development, flutter apps, riverpod, bloc, firebase, portfolio",
+  author: "Muhammed Risan PT",
   robots: "index, follow",
 };
 
