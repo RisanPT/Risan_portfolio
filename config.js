@@ -19,10 +19,13 @@ export const config = {
             id: 1,
             title: "Dahab Mining",
             description: "Cross-platform cryptocurrency mining app for a UAE-based company, enabling users to invest in and manage real Bitcoin mining operations. Implemented clean architecture for scalability, Riverpod for efficient state management, and Dio for secure API integration. Integrated Ziina and DeusX payment gateways for seamless deposits and withdrawals.",
-            image: "/projects/dahab-mining.webp",
+            image: "/projects/project-1.jpeg",
             technologies: ["Flutter", "Riverpod", "Dio", "GoRouter", "GetStorage", "Ziina Payment API", "DeusX"],
             github: "#",
-            demo: "#"
+            demo: "#",
+            playstore: "https://play.google.com/store/apps/details?id=com.dahabminers.dahb",
+            appstore: "https://apps.apple.com/us/app/dahab-mining/id6752802798",
+
         },
         {
             id: 2,

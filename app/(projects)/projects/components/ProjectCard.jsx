@@ -2,7 +2,8 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import { FaExternalLinkAlt, FaGooglePlay, FaApple } from 'react-icons/fa';
+// --- 1. Import the new icon (FaGithub) ---
+import { FaExternalLinkAlt, FaGooglePlay, FaApple, FaGithub } from 'react-icons/fa';
 import { itemAnimation } from './Animations';
 
 export const ProjectCard = ({ project, index }) => (
@@ -50,6 +51,8 @@ export const ProjectCard = ({ project, index }) => (
             </div>
 
             <div className="flex items-center gap-3 pt-4 flex-wrap">
+
+                {/* --- Existing Live Demo Button (FaExternalLinkAlt) --- */}
                 {project.demo && project.demo !== "#" && (
                     <Button
                         size="sm"
@@ -68,6 +71,27 @@ export const ProjectCard = ({ project, index }) => (
                     </Button>
                 )}
 
+                {/* --- NEW: GitHub/Source Code Button (FaGithub) --- */}
+                {project.github && project.github !== "#" && (
+                    <Button
+                        size="sm"
+                        variant="outline" // Use outline variant for secondary links
+                        className="rounded-full h-8 px-4 text-xs"
+                        asChild
+                    >
+                        <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2"
+                        >
+                            <FaGithub className="w-3 h-3" />
+                            Source Code
+                        </a>
+                    </Button>
+                )}
+
+                {/* --- Existing Play Store Button (FaGooglePlay) --- */}
                 {project.playstore && project.playstore !== "#" && (
                     <Button
                         size="sm"
@@ -87,6 +111,7 @@ export const ProjectCard = ({ project, index }) => (
                     </Button>
                 )}
 
+                {/* --- Existing App Store Button (FaApple) --- */}
                 {project.appstore && project.appstore !== "#" && (
                     <Button
                         size="sm"
