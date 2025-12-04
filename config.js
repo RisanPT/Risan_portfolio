@@ -40,7 +40,7 @@ export const config = {
             id: 3,
             title: "Tron Academy",
             description: "Developed a cross-platform e-learning application similar to Udemy, offering courses in digital marketing, multimedia, and coding. Implemented real-time community features where users can join groups, chat, share files, voice notes, and images. Integrated Agora for live interactive classes and built audio/video streaming modules.",
-            image: "/projects/tron-academy.webp",
+            image: "/projects/tron_academy.jpeg",
             technologies: ["Flutter", "Riverpod", "Dio", "Flutter Secure Storage", "Socket.io", "Agora", "Node.js"],
             github: "#",
             demo: "#"
@@ -49,7 +49,7 @@ export const config = {
             id: 4,
             title: "HandCar",
             description: "Developed a cross-platform car service and accessories app for a UAE-based company, offering spare parts, accessories purchases, and nearby service center discovery. Implemented state management with Riverpod, secure data handling using GetStorage, and API integration through Dio. Integrated GeoLocator for real-time detection of nearby service centers.",
-            image: "/projects/handcar.webp",
+            image: "/projects/handcar.jpeg",
             technologies: ["Flutter", "Riverpod", "Dio", "GetStorage", "GeoLocator", "Python Django"],
             github: "#",
             demo: "#"

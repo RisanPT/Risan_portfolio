@@ -57,7 +57,7 @@ const Logo = ({ isMobile = false }) => (
             className="flex items-center space-x-2 hover:opacity-90 transition-opacity"
         >
             <motion.div
-                whileHover={{ opacity:0.5 }}
+                whileHover={{ opacity: 0.5 }}
                 whileTap={{ scale: 0.95 }}
             >
                 <Image
@@ -74,7 +74,7 @@ const Logo = ({ isMobile = false }) => (
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
             >
-                <span className="hidden sm:inline">{config.developer.name} | Devxora</span>
+                <span className="hidden sm:inline">{config.developer.name} </span>
                 {/* <span className="sm:hidden">{config.developer.name}</span> */}
             </motion.span>
         </Link>
@@ -110,7 +110,7 @@ const ContactButton = ({ isMobile = false, onLinkClick }) => (
         transition={{ delay: isMobile ? 0.5 : 0.4, duration: 0.5 }}
         onClick={onLinkClick}
     >
-        <Link href={"https://github.com/huzaifahmedz/Huzaif-Ahmed-portfolio-fourth"} target='_blank' className={isMobile ? 'w-full' : ''}>
+        <Link href={"https://github.com/RisanPT/Risan_portfolio.git"} target='_blank' className={isMobile ? 'w-full' : ''}>
             <Button className={`${isMobile ? 'w-full' : ''} rounded-2xl font-semibold bg-white text-gray-900 hover:bg-gray-200 text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3`}>
                 <span className="hidden sm:inline">Repo Inside!</span>
                 <span className="sm:hidden">Template</span>
@@ -144,7 +144,7 @@ const Header = () => {
                     <div className="hidden md:block">
                         <ContactButton />
                     </div>
-                    
+
                     {/* Mobile Menu Button */}
                     <button
                         onClick={toggleMobileMenu}
@@ -173,7 +173,7 @@ const Header = () => {
                             className="fixed inset-0 bg-black/80 backdrop-blur-sm z-40 md:hidden"
                             onClick={closeMobileMenu}
                         />
-                        
+
                         {/* Mobile Menu Panel */}
                         <motion.div
                             initial={{ x: '100%' }}
